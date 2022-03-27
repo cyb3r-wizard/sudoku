@@ -111,39 +111,31 @@ rango_FIL = 9
 for i in range (0,3):
     i=i%3
     FIL1.append(Letras_Merge[i+3*0]) #9*0
-    FIL1.append(Letras_Merge[i+3*3]) #9*1
-    FIL1.append(Letras_Merge[i+3*6])#9*2
-
     FIL2.append(Letras_Merge[i+3*1]) #3*1
+    FIL3.append(Letras_Merge[i+3*2]) #6
+    FIL1.append(Letras_Merge[i+3*3]) #9*1
     FIL2.append(Letras_Merge[i+3*4]) #3*4
+    FIL3.append(Letras_Merge[i+3*5]) # 15
+    FIL1.append(Letras_Merge[i+3*6])#9*2
     FIL2.append(Letras_Merge[i+3*7]) #3*7
-
-    FIL3.append(Letras_Merge[i+(3*2)]) #6
-    FIL3.append(Letras_Merge[i+(3*5)]) # 15
-    FIL3.append(Letras_Merge[i+(3*8)]) # 18
-
-    FIL4.append(Letras_Merge[i+(3*9)]) #27 = 3*9
-    FIL4.append(Letras_Merge[i+(3*12)]) #36 = 3*12
-    FIL4.append(Letras_Merge[i+(3*15)]) #45 = 3*15
-
+    FIL3.append(Letras_Merge[i+3*8]) # 18
+    FIL4.append(Letras_Merge[i+3*9]) #27 = 3*9
     FIL5.append(Letras_Merge[i+3*10])
-    FIL5.append(Letras_Merge[i+3*13])
-    FIL5.append(Letras_Merge[i+3*16])
-
     FIL6.append(Letras_Merge[i+3*11]) #Fin de la segunda triadad de cuadrantes
+    FIL4.append(Letras_Merge[i+3*12]) #36 = 3*12
+    FIL5.append(Letras_Merge[i+3*13])
     FIL6.append(Letras_Merge[i+3*14])
+    FIL4.append(Letras_Merge[i+3*15]) #45 = 3*15
+    FIL5.append(Letras_Merge[i+3*16])
     FIL6.append(Letras_Merge[i+3*17])
-
     FIL7.append(Letras_Merge[i+3*18])
-    FIL7.append(Letras_Merge[i+3*21])
-    FIL7.append(Letras_Merge[i+3*24])
-
     FIL8.append(Letras_Merge[i+3*19])
-    FIL8.append(Letras_Merge[i+3*22])
-    FIL8.append(Letras_Merge[i+3*25])
-
     FIL9.append(Letras_Merge[i+3*20])
+    FIL7.append(Letras_Merge[i+3*21])
+    FIL8.append(Letras_Merge[i+3*22])
     FIL9.append(Letras_Merge[i+3*23])
+    FIL7.append(Letras_Merge[i+3*24])
+    FIL8.append(Letras_Merge[i+3*25])
     FIL9.append(Letras_Merge[i+3*26])
 
 FIL1.sort()
