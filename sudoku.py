@@ -37,6 +37,10 @@ for i in range(0,9): #Distribución de las letras en cuadrantes según su letra 
 #for i in range(len(Letras_Merge)):
 #    print(Letras_Merge[i]
 
+#Para estudiar la relación matemática de cada cuadro, utilizo la siguiente acción:
+#restos = [] //Creo una lista vacía para almacenar los datos
+#for i i range(1,81):
+#   restos.append(i%9) //Añado los restos de dividir los primeros 81 enteros por 9.
 
 
 
