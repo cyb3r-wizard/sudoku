@@ -1,3 +1,13 @@
+from tkinter import *
+from tkinter import ttk
+root = Tk()
+frm = ttk.Frame(root, padding=10)
+frm.grid()
+ttk.Label(frm, text="Hello World!").grid(column=0, row=0)
+ttk.Button(frm, text="Quit", command=root.destroy).grid(column=1, row=0)
+root.mainloop()
+
+
 Letras_a = ["A","B","C","D","E","F","G","H","I"]
 Letras_b = ["A","B","C","D","E","F","G","H","I"]
 Letras_Merge = []
@@ -57,44 +67,33 @@ rango_COL =9
 for i in range(0,3): #Distribución de las letras en cuadrantes según su letra inicial
     i=i*3
     COL1.append(QuadA[i]) 
+    COL1.append(QuadD[i])
+    COL1.append(QuadG[i])
     COL2.append(QuadA[i+1])
     COL3.append(QuadA[2+i])
-
+    COL2.append(QuadD[i+1])
+    COL3.append(QuadD[i+2])
+    COL2.append(QuadG[i+1])
+    COL3.append(QuadG[i+2])
     COL4.append(QuadB[i]) 
     COL5.append(QuadB[1+i])
     COL6.append(QuadB[2+i])
-
-    COL7.append(QuadC[i]) #!
-    COL8.append(QuadC[i+1])
-    COL9.append(QuadC[i+2])
-
-for i in range(0,3):
-    i=i*3
-    COL1.append(QuadD[i])
-    COL2.append(QuadD[i+1])
-    COL3.append(QuadD[i+2])
-
     COL4.append(QuadE[i]) 
     COL5.append(QuadE[1+i])
     COL6.append(QuadE[2+i])
-
-    COL7.append(QuadF[i]) 
-    COL8.append(QuadF[1+i])
-    COL9.append(QuadF[2+i])
-
-for i in range(0,3):
-    i=i*3
-    COL1.append(QuadG[i])
-    COL2.append(QuadG[i+1])
-    COL3.append(QuadG[i+2])
-
     COL4.append(QuadH[i]) 
     COL5.append(QuadH[1+i])
     COL6.append(QuadH[2+i])
-
+    COL7.append(QuadC[i]) #!
+    COL8.append(QuadC[i+1])
+    COL9.append(QuadC[i+2])
+    COL7.append(QuadF[i]) 
+    COL8.append(QuadF[1+i])
+    COL9.append(QuadF[2+i])
     COL7.append(QuadI[i]) 
     COL8.append(QuadI[1+i])
     COL9.append(QuadI[2+i])
+
 
 FIL1=[]
 FIL2=[]
@@ -147,3 +146,13 @@ FIL6.sort()
 FIL7.sort()
 FIL8.sort()
 FIL9.sort()
+
+COL1.sort()
+COL2.sort()
+COL3.sort()
+COL4.sort()
+COL5.sort()
+COL6.sort()
+COL7.sort()
+COL8.sort()
+COL9.sort()
