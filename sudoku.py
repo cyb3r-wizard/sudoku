@@ -9,5 +9,21 @@ while count > -1:
     count=count-1
 
 Letras_Merge.sort()
-for i in range(len(Letras_Merge)):
-    print(Letras_Merge[i])
+QuadA=[]
+QuadB=[]
+QuadC=[]
+QuadD=[]
+QuadE=[]
+QuadF=[]
+QuadG=[]
+QuadH=[]
+QuadI=[]
+
+
+#Las siguientes lineas son prescindibles a futuro, sólo existen para corroborar la función del programa
+
+#for i in range(len(Letras_Merge)):
+#    print(Letras_Merge[i])
+
+for i in range(len(Letras_a)):
+    QuadA.append(Letras_Merge[i])
