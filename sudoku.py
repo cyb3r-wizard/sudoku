@@ -1,6 +1,3 @@
-from numpy import complex128
-
-
 Letras_a = ["A","B","C","D","E","F","G","H","I"]
 Letras_b = ["A","B","C","D","E","F","G","H","I"]
 Letras_Merge = []
@@ -98,3 +95,63 @@ for i in range(0,3):
     COL7.append(QuadI[i]) 
     COL8.append(QuadI[1+i])
     COL9.append(QuadI[2+i])
+
+FIL1=[]
+FIL2=[]
+FIL3=[]
+FIL4=[]
+FIL5=[]
+FIL6=[]
+FIL7=[]
+FIL8=[]
+FIL9=[]
+
+rango_FIL = 9
+
+for i in range (0,3):
+    i=i%3
+    FIL1.append(Letras_Merge[i]) #9*0
+    FIL1.append(Letras_Merge[i+3*3]) #9*1
+    FIL1.append(Letras_Merge[i+3*3*2])#9*2
+
+    FIL2.append(Letras_Merge[i+3*1]) #3*1
+    FIL2.append(Letras_Merge[i+3*4]) #3*4
+    FIL2.append(Letras_Merge[i+3*7]) #3*7
+
+    FIL3.append(Letras_Merge[i+(3*2)]) #6
+    FIL3.append(Letras_Merge[i+(3*5)]) # 15
+    FIL3.append(Letras_Merge[i+(3*8)]) # 18
+
+    FIL4.append(Letras_Merge[i+(3*9)]) #27 = 3*9
+    FIL4.append(Letras_Merge[i+(3*12)]) #36 = 3*12
+    FIL4.append(Letras_Merge[i+(3*15)]) #45 = 3*15
+
+    FIL5.append(Letras_Merge[i+3*10])
+    FIL5.append(Letras_Merge[i+3*13])
+    FIL5.append(Letras_Merge[i+3*16])
+
+    FIL6.append(Letras_Merge[i+3*11]) #Fin de la segunda triadad de cuadrantes
+    FIL6.append(Letras_Merge[i+3*14])
+    FIL6.append(Letras_Merge[i+3*17])
+
+    FIL7.append(Letras_Merge[i+3*18])
+    FIL7.append(Letras_Merge[i+3*21])
+    FIL7.append(Letras_Merge[i+3*24])
+
+    FIL8.append(Letras_Merge[i+3*19])
+    FIL8.append(Letras_Merge[i+3*22])
+    FIL8.append(Letras_Merge[i+3*25])
+
+    FIL9.append(Letras_Merge[i+3*20])
+    FIL9.append(Letras_Merge[i+3*23])
+    FIL9.append(Letras_Merge[i+3*26])
+
+FIL1.sort()
+FIL2.sort()
+FIL3.sort()
+FIL4.sort()
+FIL5.sort()
+FIL6.sort()
+FIL7.sort()
+FIL8.sort()
+FIL9.sort()
